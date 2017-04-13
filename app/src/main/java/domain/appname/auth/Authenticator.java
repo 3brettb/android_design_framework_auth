@@ -1,3 +1,7 @@
+/*
+ * Created by Brett Brist April 2017
+ * https://github.com/3brettb/android_design_framework_auth
+ */
 package domain.appname.auth;
 
 import android.util.Log;

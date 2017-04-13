@@ -1,4 +1,9 @@
 /*
+ * Created by Brett Brist April 2017
+ * https://github.com/3brettb/android_design_framework_auth
+ */
+
+/*
     This is a mature class. Do not alter the contents of this class.
     If its necessary to create different functionality, extend this class.
 

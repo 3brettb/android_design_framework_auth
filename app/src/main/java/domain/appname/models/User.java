@@ -1,3 +1,7 @@
+/*
+ * Created by Brett Brist April 2017
+ * https://github.com/3brettb/android_design_framework_auth
+ */
 package uwyohonors.honorsapp.models;
 
 import org.json.JSONException;
@@ -12,35 +16,17 @@ public class User implements Model {
 
     public int id;
 
-    public String username;
-
-    public String firstname;
-
-    public String lastname;
-
-    public Date dob;
-
-    public boolean international;
-
-    public String email;
-
-    public String cell;
-
-    public String wnumber;
+    /*
+     * Define the class variables for the model
+     */
 
     public User(){}
 
     @Override
     public User map(JSONObject reference) throws JSONException {
-        this.id = reference.getInt("id");
-        this.username = reference.getString("username");
-        this.firstname = reference.getString("firstname");
-        this.lastname = reference.getString("lastname");
-        this.dob = Helpers.stringToDate(reference.getString("dob"), "yyyy-MM-dd");
-        this.international = (reference.getString("international") == "1") ? true : false;
-        this.email = reference.getString("email");
-        this.cell = reference.getString("cell");
-        this.wnumber = reference.getString("wnumber");
+        /*
+         * Map the values to the class variables defined above
+         */
         return this;
     }
 }
